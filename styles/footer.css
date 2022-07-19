@@ -1,0 +1,109 @@
+                           
+                           
+                           
+                      /* ajuste do rodapé quando em tamanho mobile, celulares*/     
+                           
+                           
+                           .rodapé {
+                                padding: 1em;
+                                
+                            }
+
+                            .rodapé-blocos__conteudo {
+                                display: none;
+                            }
+
+
+
+
+                        /* ajuste do display para none so funcionara quando a classe desse item e clarada como felx dentro do @media*/   
+
+                                        .rodapé-blocos__titulo {
+                                            display: none;
+                                        }
+
+                           /* ajuste do display para none so funcionara quando a classe desse item e clarada como felx dentro do @media*/   
+
+
+
+
+
+
+
+
+
+/* ajuste da pagina de acordo com dispositivos tamanho tablet */
+
+.separador__rodapé {
+    display: none;
+}
+
+@media  screen and (min-width: 1024px) {
+
+
+
+                                    /* delcara na box de todos os items como flex para q todos os items dentro passem a ser flex items
+                                    sendo assim capaz de alinhalos lado a lado*/
+                                    .rodapé {
+                                        display: flex;
+                                        justify-content: space-around;
+                                        padding: 2em 0;
+                                    }
+                                    /* delcara na box de todos os items como flex para q todos os items dentro passem a ser flex items
+                                    sendo assim capaz de alinhalos lado a lado*/
+
+
+
+
+
+                                    
+                                                                                /* configuração da div snedo capaz de alterar o conteudo dentro dessa div como espaçamento e alinhamento*/
+                                                                                .rodapé-blocos__conteudo {
+                                                                                    display: flex;
+                                                                                    align-items: center;
+                                                                                    padding: 0.5em;
+                                                                                
+                                                                                }
+
+                                                                                /* configuração da div snedo capaz de alterar o conteudo dentro dessa div como espaçamento e alinhamento*/
+
+.rodapé-blocos__titulo {
+        padding: 2em 0;
+        font-family: var(--fonte-principal);
+        font-size: 14px;
+        font-weight: 300;
+
+
+                                /* nescessario ser declarado como flex para que as modificaços fora do @media
+                                sejam aplicadas */
+
+                                        display: flex;
+                                }
+
+
+                                /* nescessario ser declarado como flex para que as modificaços fora do @media
+                                sejam aplicadas */
+
+
+
+
+
+.rodapé-blocos__link {
+    padding: 0 1.5em;
+    text-decoration: none;
+    color: var( --cinza-titulo-footer);
+    font-family: var(--fonte-principal);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+}
+
+/* ajuste da pagina de acordo com dispositivos tamanho tablet */
+
+@media  screen and (min-width: 1728px) {
+    .separador__rodapé {
+        padding: none;
+        display: flex;
+    }
+}

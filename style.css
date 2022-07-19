@@ -1,0 +1,32 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrosel.css");
+@import url("styles/carrosel2.css");
+@import url("styles/topicos.css");
+@import url("styles/menu.css");
+@import url("styles/footer.css");
+
+
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --cor-do-ttttulo: #EB9B00;
+    --menu-cor-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);;
+    --fonte-principal: "Poppins";
+    --fonte-titulo-livro: #002F52;
+    --botão: #EB9B00;
+    --font-logo: "Josefin Sans";
+    --preto: black;
+    --cinza-titulo-footer:  #474646;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+

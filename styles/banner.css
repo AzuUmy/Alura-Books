@@ -1,0 +1,86 @@
+
+
+
+                        /* fundo do banner central da pagina */
+                        .banner {
+                            background: var(--menu-cor-gradiente);
+                            color: var(--branco);
+                            text-align: center;
+                            padding: 4em 3em;
+                        }
+                        /* fundo do banner central da pagina */
+
+
+
+                                                                        /* titulo do banner central*/
+                                                                                .banner__titulo {
+                                                                                    font-size: 17px;
+                                                                                    font-weight: 700;
+                                                                                }
+                                                                    /* titulo do banner central*/
+
+
+
+
+                                                                                                                /* texto do banner central*/
+                                                                                                                            .banner__texto {
+                                                                                                                                font-size: 16px;
+                                                                                                                                font-weight: 400;
+                                                                                                                                margin: 1em 0;
+
+                                                                                                                            }
+                                                                                                                /* texto do banner central*/
+
+
+
+
+
+                                                                        /* modificar caixa de pesquisa como bordas cores tamanho etc*/
+                                                                                    
+                                                                        .banner__pesquisa {
+                                                                            background-color: transparent;
+                                                                            border-radius: 24px;
+                                                                            border: 1px solid var(--branco);
+                                                                            color: var(--branco);
+                                                                            padding: 1em;
+                                                                            width: 100%;
+                                                                            margin: 2em 0 0 0;
+                                                                            
+                                                                        }
+
+                                                                    /* modificar caixa de pesquisa como bordas cores tamanho etc*/
+
+
+
+
+
+
+
+
+
+
+   /* modificar elementos dentro da caixa de pesquisa como texto e imagens*/
+.banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+
+
+
+             /* forma correta de por uma imagem dentro do placeholder*/
+                background: url("../img/lupa.svg") no-repeat;
+                background-position: 0.5em;
+             /* forma correta de por uma imagem dentro do placeholder*/
+
+}
+
+/* modificar elementos dentro da caixa de pesquisa como texto e imagens*/
+
+
+@media  screen and (min-width: 1024px) {
+        .banner__pesquisa {
+            width: 40%;
+        }
+}

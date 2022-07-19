@@ -1,0 +1,279 @@
+
+/* item do menu hamburger*/
+
+            /* imagem do menu hamburger*/
+
+                    .cabeçalho__menu-hamburguer {
+                        width: 5px;
+                        height: 20px;
+                        background-image: url("../img/Menu.svg");
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+
+
+            /* imagem do menu hamburger*/
+
+
+
+                                            /* background do menu */
+                                                    .cabeçalho {
+                                                        background-color: var(--branco);
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        align-items: center;
+
+
+                                            /* posiçao relativa destaca o conteudo dos demais da pagina e coloca em uma posiçao relativa na pagina */
+                                                        position: relative;
+                                                    }
+
+                                               /* posiçao relativa destaca o conteudo dos demais da pagina e coloca em uma posiçao relativa na pagina */
+
+
+                                            /* background do menu */
+                                            
+
+
+                                                                            /* container que engloba todo conteudo do menu hamburguer*/
+
+                                                                                                .cotainer {
+                                                                                                    display: flex;
+                                                                                                    align-items: left;
+                                                                                                }
+                                                                                /* container que engloba todo conteudo do menu hamburguer*/
+
+
+                                                                                
+
+                                                                                                                                /* imagem do menu hamburger*/                                                                 
+                                                                                                                                                    .container__imagem {
+                                                                                                                                                        padding: 1em;
+                                                                                                                                                        width: 30px;
+                                                                                                                                                    }
+
+                                                                                                                                                                                                                                /* imagem do menu hamburger*/      
+                                                                                                    /* possção da lista do menu */    
+
+                                                                                                                    .lista__menu {
+                                                                                                                    display: none;   
+
+                                                                                                                        /* postion absolute nescessita da position relative na tag pai, torna possivel mover o elemento da forma q voce quiser*/  
+
+                                                                                                                    position: absolute;
+
+                                                                                                                     /* postion absolute nescessita da position relative na tag pai, torna possivel mover o elemento da forma q voce quiser*/  
+
+                                                                                                                    top: 100%;
+                                                                                                                    width: 25vh;
+                                                                                                                 
+                                                                                                                }
+
+                                                                                                    /* posição da lista do menu*/    
+
+
+
+
+
+                                                            /* utilizado para dar um retorno quando a caixa estiver checkada ira apresentar o menu*/   
+                                                            .container__botao:checked~.lista__menu {
+                                                                display: block;
+                                                           
+                                                            }
+                                                            /* utilizado para dar um retorno quando a caixa estiver checkada ira apresentar o menu*/ 
+
+
+
+
+                                    /* espaçamento e cor de fundo do menu*/                                                           
+                                                .lista-menu__titulo, .lista-menu__item {
+                                                    padding: 1em;
+                                                    background-color: var(--branco);
+                                                }
+                                    /* espaçamento e cor de fundo do menu*/    
+
+
+                                    
+                                    
+                /* cor do titulo do menu*/ 
+
+                        .lista-menu__titulo {
+                            color: var(--cor-do-ttttulo);
+                            font-weight: 700;
+
+                        }
+
+                        
+                /* cor do titulo do menu*/ 
+
+
+
+
+ /* cor do texto do menu*/ 
+        .lista-menu__link {
+        background: var(--menu-cor-gradiente);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+            
+}
+ /* cor do texto do menu*/ 
+
+
+  /* menu ccheckbox set para none para q desapareça e não occpe espaço*/ 
+
+            .container__botao {
+            display: none;
+            }
+
+ /* menu ccheckbox set para none para q desapareça e não occpe espaço*/ 
+
+
+
+
+ /* usado  paa e stabelecer um tamanho minimo no quual a tela ira dimiur*/ 
+
+.container__titulo {
+    display: none;
+}
+
+.opçoes {
+    display: none;
+}
+
+.container__texto {
+    display: none;
+}
+
+ @media  screen and (min-width: 1024px) { 
+
+
+    .container__titulo, .container__titulo--negrito {
+        font-family: 30px;
+        font-family: var(--font-logo);
+        position: relative;
+
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+        position: absolute;
+        left: 5em;
+        top: 1.5em;
+        font-size: 20px;
+
+        
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+
+    .opçoes {
+        display: flex;
+    }
+
+
+    .opçoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+      
+     
+    }
+
+
+        .opçoes__link {
+            padding: 0 1em;
+            text-decoration: none;
+            color: var(--preto); 
+        }
+
+
+        .continer__imagem-transparente {
+            display: none;
+        }   
+
+
+
+        .cabeçalho__menu-hamburguer {
+            display: none;
+        }
+
+
+     .alura__books--margin {
+        margin: 0 2em;
+     }
+
+
+     .opçoes__botão:checked ~ .lista__menu {
+        display: block;
+     }
+
+     .lista-menu__item:active {
+        background: var(--cor-do-ttttulo);
+    
+     
+        
+     }
+
+
+     .opçoes__botão {
+        display: none;
+     }
+
+
+     .categorias__label {
+        font-family: var(--fonte-principal);
+        margin: 0 1em 0 0;
+        cursor: pointer;
+     }
+
+   
+
+
+     
+  
+
+ }
+
+  /* usado  paa e stabelecer um tamanho minimo no quual a tela ira dimiur*/
+
+
+
+
+  @media  screen and (min-width: 1728px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 0 1em;
+    }
+
+    .container__texto {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .container__titulo {
+        display: flex;
+        top: 1.3em;
+        left: 6em ;
+   
+
+    }
+
+    
+    .opçoes-menu-navegador {
+        display: flex;
+        margin: 0 45em 0 0;
+    }
+
+   
+
+
+
+  }

@@ -1,0 +1,38 @@
+.menu {
+    background: var(--branco);
+    padding: 1em 3em;
+
+
+}
+
+.menu__titulo {
+  padding: 1em 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: var( --fonte-titulo-livro);
+}
+
+.menu__texto {
+padding: 1em 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--fonte-titulo-livro);
+
+}
+
+
+.menu__pesquisa {
+    background: transparent;
+    width:  100%;
+    border-radius: 24px;
+    border: 1px solid   var(--fonte-titulo-livro);
+    padding: 1em;
+    margin: 2em 0;
+   align-items: center;
+}
+
+hr {
+    margin: 0;
+}
+
+
